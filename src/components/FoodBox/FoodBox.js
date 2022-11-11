@@ -1,3 +1,4 @@
+import "./FoodBox.css"
 import { Button, Card } from "react-bootstrap";
 
 
@@ -11,7 +12,7 @@ function FoodBox({ food, deleteFood }) {
     <Card style={{ width: '18rem' }}>    
       <Card.Header>{ food.name }</Card.Header>
     <Card.Body>
-      <Card.Img variant="top" src={ food.image } />
+      <Card.Img className="img-food-card" variant="top" src={ food.image } />
       <Card.Text>Calories: { food.calories }</Card.Text>
       <Card.Text>Servings: { food.servings }</Card.Text>
       <Card.Text>Total Calories: { food.calories * food.servings } Kcal</Card.Text>
